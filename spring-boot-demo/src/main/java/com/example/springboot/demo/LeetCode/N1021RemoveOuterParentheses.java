@@ -4,6 +4,8 @@ import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
+import java.util.Stack;
 
 public class N1021RemoveOuterParentheses {
 
@@ -12,12 +14,15 @@ public class N1021RemoveOuterParentheses {
 //        String s = "(()())(())";
 //        System.out.println("result:"+removeOuterParentheses2(s));
 
-        MyQueue myQueue = new MyQueue();
-        myQueue.push(1);
-        myQueue.push(2);
-        System.out.println(myQueue.peek());
-        System.out.println(myQueue.pop());
-        System.out.println(myQueue.empty());
+        /***
+         * CQueue
+         */
+        /*CQueue myQueue = new CQueue();
+        System.out.println(myQueue.deleteHead());
+        myQueue.appendTail(5);
+        myQueue.appendTail(2);
+        System.out.println(myQueue.deleteHead());
+        System.out.println(myQueue.deleteHead());*/
 
     }
 
