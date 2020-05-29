@@ -50,10 +50,6 @@ public class N680ValidPalindrome {
     public static boolean validPalindrome(String s) {
         char[] strs = s.toCharArray();
         int i,j;
-//        ebcbb  ec ecabba ce c  bbcbe
-//        deeee
-//        eeccc c bebaeeabeb cccee a
-
         for (i = 0,j = strs.length -1; i <=j; i++,j--) {
             if (isDeleted <= 1){
                 if (i==j ) return true;
@@ -83,8 +79,6 @@ public class N680ValidPalindrome {
                             return false;
                         }
                     }
-//                    return (isPal || isPal2);
-
                 }
                 else return false;
             }else {
