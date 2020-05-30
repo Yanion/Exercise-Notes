@@ -2,14 +2,67 @@ package com.example.springboot.demo.LeetCode;
 
 import org.springframework.util.StringUtils;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Stack;
 
 public class N1021RemoveOuterParentheses {
 
     public static void main(String[] args) {
+
+        /**
+         * ["MaxQueue","max_value","pop_front","max_value","push_back","max_value","pop_front","max_value","pop_front","push_back","pop_front","pop_front","pop_front","push_back","pop_front","max_value","pop_front","max_value","push_back","push_back","max_value","push_back","max_value","max_value","max_value","push_back","pop_front","max_value","push_back","max_value","max_value","max_value","pop_front","push_back","push_back","push_back","push_back","pop_front","pop_front","max_value","pop_front","pop_front","max_value","push_back","push_back","pop_front","push_back","push_back","push_back","push_back","pop_front","max_value","push_back","max_value","max_value","pop_front","max_value","max_value","max_value","push_back","pop_front","push_back","pop_front","max_value","max_value","max_value","push_back","pop_front","push_back","push_back","push_back","pop_front","max_value","pop_front","max_value","max_value","max_value","pop_front","push_back","pop_front","push_back","push_back","pop_front","pus...
+         * [[],[],[],[],[46],[],[],[],[],[868],[],[],[],[525],[],[],[],[],[123],[646],[],[229],[],[],[],[871],[],[],[285],[],[],[],[],[45],[140],[837],[545],[],[],[],[],[],[],[561],[237],[],[633],[98],[806],[717],[],[],[186],[],[],[],[],[],[],[268],[],[29],[],[],[],[],[866],[],[239],[3],[850],[],[],[],[],[],[],[],[310],[],[674],[770],[],[525],[],[425],[],[],[720],[],[],[],[373],[411],[],[831],[],[765],[701],[]]
+         */
+
+        MaxQueue maxQueue = new MaxQueue();
+        maxQueue.push_back(1);
+        maxQueue.push_back(2);
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+
+
+        /*MaxQueue maxQueue = new MaxQueue();
+        maxQueue.push_back(1);
+        maxQueue.push_back(2);
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());*/
+
+
+
+        /*MinStack minStack = new MinStack();
+        minStack.push(2);
+        minStack.push(0);
+        minStack.push(3);
+        minStack.push(0);
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());*/
+
+
+        /*MinStack minStack = new MinStack();
+        minStack.push(2147483646);
+        minStack.push(2147483646);
+        minStack.push(2147483647);
+        System.out.println(minStack.top());
+        minStack.pop();
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        minStack.push(2147483647);
+        System.out.println(minStack.top());
+        System.out.println(minStack.getMin());
+        minStack.push(-2147483648);
+        System.out.println(minStack.top());
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());*/
+
+
 
 //        String s = "(()())(())";
 //        System.out.println("result:"+removeOuterParentheses2(s));
