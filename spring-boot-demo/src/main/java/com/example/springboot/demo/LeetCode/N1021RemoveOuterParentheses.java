@@ -8,11 +8,49 @@ public class N1021RemoveOuterParentheses {
     public static void main(String[] args) {
 
         /**
-         * ["MaxQueue","max_value","pop_front","max_value","push_back","max_value","pop_front","max_value","pop_front","push_back","pop_front","pop_front","pop_front","push_back","pop_front","max_value","pop_front","max_value","push_back","push_back","max_value","push_back","max_value","max_value","max_value","push_back","pop_front","max_value","push_back","max_value","max_value","max_value","pop_front","push_back","push_back","push_back","push_back","pop_front","pop_front","max_value","pop_front","pop_front","max_value","push_back","push_back","pop_front","push_back","push_back","push_back","push_back","pop_front","max_value","push_back","max_value","max_value","pop_front","max_value","max_value","max_value","push_back","pop_front","push_back","pop_front","max_value","max_value","max_value","push_back","pop_front","push_back","push_back","push_back","pop_front","max_value","pop_front","max_value","max_value","max_value","pop_front","push_back","pop_front","push_back","push_back","pop_front","pus...
-         * [[],[],[],[],[46],[],[],[],[],[868],[],[],[],[525],[],[],[],[],[123],[646],[],[229],[],[],[],[871],[],[],[285],[],[],[],[],[45],[140],[837],[545],[],[],[],[],[],[],[561],[237],[],[633],[98],[806],[717],[],[],[186],[],[],[],[],[],[],[268],[],[29],[],[],[],[],[866],[],[239],[3],[850],[],[],[],[],[],[],[],[310],[],[674],[770],[],[525],[],[425],[],[],[720],[],[],[],[373],[411],[],[831],[],[765],[701],[]]
+         * ["MaxQueue","max_value","pop_front","max_value","push_back","max_value","pop_front","max_value","pop_front",
+         * "push_back","pop_front","pop_front","pop_front","push_back",
+         * "pop_front","max_value","pop_front","max_value",
+         * "push_back","push_back","max_value","push_back","max_value","max_value","max_value",
+         * "push_back","pop_front","max_value","push_back","max_value","max_value","max_value","pop_front","push_back","push_back","push_back","push_back","pop_front","pop_front","max_value","pop_front","pop_front","max_value","push_back","push_back","pop_front","push_back","push_back","push_back","push_back","pop_front","max_value","push_back","max_value","max_value","pop_front","max_value","max_value","max_value","push_back","pop_front","push_back","pop_front","max_value","max_value","max_value","push_back","pop_front","push_back","push_back","push_back","pop_front","max_value","pop_front","max_value","max_value","max_value","pop_front","push_back","pop_front","push_back","push_back","pop_front","pus...
+         * [[],[],[],[],[46],[],[],[],[],
+         * [868],[],[],[],[525],[],[],[],[],
+         * [123],[646],[],[229],[],[],[],
+         * [871],[],[],[285],[],[],[],[],[45],[140],[837],[545],[],[],[],[],[],[],[561],[237],[],[633],[98],[806],[717],[],[],[186],[],[],[],[],[],[],[268],[],[29],[],[],[],[],[866],[],[239],[3],[850],[],[],[],[],[],[],[],[310],[],[674],[770],[],[525],[],[425],[],[],[720],[],[],[],[373],[411],[],[831],[],[765],[701],[]]
          */
 
         MaxQueue maxQueue = new MaxQueue();
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        maxQueue.push_back(46);
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(868);
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(525);
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        maxQueue.push_back(123);
+        maxQueue.push_back(646);
+        System.out.println(maxQueue.max_value());
+        maxQueue.push_back(229);
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+
+
+
+
+
+
+
         maxQueue.push_back(1);
         maxQueue.push_back(2);
         System.out.println(maxQueue.max_value());
