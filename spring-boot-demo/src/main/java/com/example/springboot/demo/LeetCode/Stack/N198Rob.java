@@ -1,4 +1,4 @@
-package com.example.springboot.demo.LeetCode;
+package com.example.springboot.demo.LeetCode.Stack;
 
 public class N198Rob {
 

@@ -1,4 +1,4 @@
-package com.example.springboot.demo.LeetCode;
+package com.example.springboot.demo.LeetCode.Stack;
 
 import java.util.Stack;
 

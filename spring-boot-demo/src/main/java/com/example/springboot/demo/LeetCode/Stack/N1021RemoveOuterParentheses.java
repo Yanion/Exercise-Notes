@@ -1,4 +1,4 @@
-package com.example.springboot.demo.LeetCode;
+package com.example.springboot.demo.LeetCode.Stack;
 
 import org.springframework.util.StringUtils;
 
@@ -13,6 +13,11 @@ public class N1021RemoveOuterParentheses {
          * "pop_front","max_value","pop_front","max_value",
          * "push_back","push_back","max_value","push_back","max_value","max_value","max_value",
          * "push_back","pop_front","max_value","push_back","max_value","max_value","max_value","pop_front","push_back","push_back","push_back","push_back","pop_front","pop_front","max_value","pop_front","pop_front","max_value","push_back","push_back","pop_front","push_back","push_back","push_back","push_back","pop_front","max_value","push_back","max_value","max_value","pop_front","max_value","max_value","max_value","push_back","pop_front","push_back","pop_front","max_value","max_value","max_value","push_back","pop_front","push_back","push_back","push_back","pop_front","max_value","pop_front","max_value","max_value","max_value","pop_front","push_back","pop_front","push_back","push_back","pop_front","pus...
+         *
+         * [46],[868],[525],[123],[646],[229],[871],[285],[45],[140],[837],[545],
+         * [561],[237],[633],[98],[806],[717],[186],[268],[29],[866],[239],[3],
+         * [850],[310],[674],[770],[525],[425],[720],[373],[411],[831],[765],[701
+         *
          * [[],[],[],[],[46],[],[],[],[],
          * [868],[],[],[],[525],[],[],[],[],
          * [123],[646],[],[229],[],[],[],
@@ -44,18 +49,88 @@ public class N1021RemoveOuterParentheses {
         System.out.println(maxQueue.max_value());
         System.out.println(maxQueue.max_value());
         System.out.println(maxQueue.max_value());
-
-
-
-
-
-
-
-        maxQueue.push_back(1);
-        maxQueue.push_back(2);
+        maxQueue.push_back(871);
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        maxQueue.push_back(285);
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(45);
+        maxQueue.push_back(140);
+        maxQueue.push_back(837);
+        maxQueue.push_back(545);
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        maxQueue.push_back(561);
+        maxQueue.push_back(237);
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(633);
+        maxQueue.push_back(98);
+        maxQueue.push_back(806);
+        maxQueue.push_back(717);
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        maxQueue.push_back(186);
+        System.out.println(maxQueue.max_value());
         System.out.println(maxQueue.max_value());
         System.out.println(maxQueue.pop_front());
         System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+        maxQueue.push_back(268);
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(29);
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+        maxQueue.push_back(866);
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(239);
+        maxQueue.push_back(3);
+        maxQueue.push_back(850);
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.max_value());
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(310);
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(674);
+        maxQueue.push_back(770);
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(525);
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(425);
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(720);
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.pop_front());
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(373);
+        maxQueue.push_back(411);
+        System.out.println(maxQueue.max_value());
+        maxQueue.push_back(831);
+        System.out.println(maxQueue.pop_front());
+        maxQueue.push_back(765);
+        maxQueue.push_back(701);
+        System.out.println(maxQueue.pop_front());
+
+
+
+
+
+
+
 
 
         /*MaxQueue maxQueue = new MaxQueue();
